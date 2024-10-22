@@ -1,0 +1,23 @@
+.button-started {
+  display: inline-block;
+  background-color: var(--cor-a1);
+  border-radius: 4px;
+  border-color: var(--cor-n2);
+  padding: 12px 60px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.button-started:hover {
+  background-color: #6b9bff;
+}
+
+@media (max-width: 1200px) {
+  .margin-bottom {
+    margin-bottom: 40px;
+  }
+}

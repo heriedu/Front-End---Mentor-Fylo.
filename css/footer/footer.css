@@ -1,0 +1,76 @@
+.footer-bg {
+  background-color: var(--cor-p1);
+  color: white;
+}
+
+.footer-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about picture img {
+  padding-bottom: 40px;
+}
+
+.contato-fylo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-column: 1;
+}
+
+.contato-fylo .contato-cel:before {
+  content: "";
+  display: inline-block;
+  content: url(./../../imagens/images/icon-phone.svg);
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.contato-fylo .contato-email:before {
+  content: "";
+  display: inline-block;
+  content: url(./../../imagens/images/icon-email.svg);
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.fylo-tags .list-tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.fylo-tags .list-tags li a {
+  transition: color 0.6s ease;
+}
+
+.fylo-tags .list-tags li a:hover {
+  color: var(--cor-p2);
+  cursor: pointer;
+}
+
+.footer-bg .fylo-socias {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .footer-about {
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .fylo-tags .list-tags {
+    grid-template-columns: 1fr;
+  }
+}

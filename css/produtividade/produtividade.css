@@ -1,0 +1,142 @@
+.produtividade-bg {
+  position: relative;
+  background: url(../../imagens/images/bg-curve-desktop.svg) no-repeat top;
+  background-size: cover;
+}
+
+.container-pro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-row: repeat(auto);
+  max-width: 1200px;
+  padding: 120px 40px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.produtividade-fylo h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.produtividade-fylo p {
+  max-width: 58ch;
+  margin-bottom: 20px;
+}
+
+.produtividade-fylo .fylo-span {
+  display: inline-block;
+  place-self: start;
+  border-bottom: 1px solid var(--cor-a2);
+  background: url(../../imagens/images/icon-arrow.svg) no-repeat;
+  background-position: right;
+  padding-right: 20px;
+  margin-bottom: 60px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Layout responsável pelo o comentário. */
+
+.produtividade-fylo .comentario-bg {
+  background: white;
+  border-radius: 5px;
+  color: var(--cor-p1);
+  padding: 40px;
+  max-width: 340px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.2);
+  position: relative;
+}
+
+.produtividade-fylo .comentario-bg:before {
+  content: "";
+  display: block;
+  background: url(../../imagens/images/icon-quotes.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  position: absolute;
+}
+
+.comentario-bg blockquote {
+  max-width: 36ch;
+}
+
+.comentario-bg cite {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  padding-left: 48px;
+  position: relative;
+}
+
+.comentario-bg cite:before {
+  content: "";
+  background: url(../../imagens/images/avatar-testimonial.jpg) no-repeat;
+  width: 40px; /* Tamanho do círculo */
+  height: 40px; /* Tamanho do círculo */
+  border-radius: 50%; /* Faz o elemento ser um círculo */
+  background-size: cover; /* Faz a imagem cobrir o círculo, mantendo a proporção */
+  position: absolute;
+  left: 0px;
+  top: -4px;
+}
+
+.comentario-bg cite {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 12px;
+}
+
+.comentario-bg .span-cite {
+  display: block;
+  color: var(--cor-p1);
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .container-pro {
+    grid-template-columns: 1fr;
+    gap: 120px;
+  }
+
+  .produtividade-fylo {
+    display: grid;
+    justify-content: center;
+  }
+
+  .produtividade-fylo .fylo-span {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .produtividade-texto {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .produtividade-fylo h1 {
+    text-align: center;
+  }
+
+  .produtividade-fylo p {
+    font-size: 0.875rem;
+    text-align: start;
+  }
+
+  .produtividade-fylo p + p {
+    margin-bottom: 40px;
+  }
+
+  .produtividade-fylo .produtividade-texto .fylo-span {
+    margin-bottom: 40px;
+  }
+
+  .comentario-bg blockquote {
+    font-size: 0.875rem;
+  }
+}

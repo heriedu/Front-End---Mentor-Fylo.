@@ -1,0 +1,11 @@
+@import url(./global-header/global.css);
+@import url(./utilidades/cores.css);
+@import url(./utilidades/componentes.css);
+
+@import url(./global-header/header.css);
+@import url(./main/main.css);
+
+@import url(./produtividade/produtividade.css);
+
+@import url(./acesso/acesso.css);
+@import url(./footer/footer.css);

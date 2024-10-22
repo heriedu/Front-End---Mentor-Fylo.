@@ -1,0 +1,76 @@
+.acesso-bg {
+  display: grid;
+  background-color: var(--cor-p2);
+}
+
+.about-acesso {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding: 120px 40px;
+  gap: 180px;
+  margin: 0 auto;
+}
+
+.about-acesso form input[type="email"] {
+  display: inline-block;
+  width: 75%;
+  padding: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.about-acesso .titulo-acesso h1 {
+  color: white;
+  font-size: 2.125rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .about-acesso {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 0 auto;
+  }
+
+  .about-acesso form input[type="email"] {
+    max-width: 240px;
+  }
+
+  .about-acesso .titulo-acesso {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-acesso .titulo-acesso p {
+    width: 80ch;
+  }
+
+  .about-acesso form {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-acesso {
+    padding: 80px 40px;
+  }
+
+  .about-acesso form input[type="email"] {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .about-acesso form .test-b {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .about-acesso .titulo-acesso p {
+    width: 100%;
+    max-width: 36ch;
+    margin: 0 auto;
+  }
+}

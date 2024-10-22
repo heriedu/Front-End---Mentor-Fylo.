@@ -1,0 +1,130 @@
+.about-fylo {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 80px 40px;
+  align-items: center;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.titulo-conteudo {
+  display: grid;
+  align-content: center;
+  gap: 20px;
+}
+
+.titulo-conteudo h1 {
+  font-size: 2.2rem;
+}
+
+form input[type="email"] {
+  width: 260px;
+  padding: 10px 16px 12px 16px;
+  font-weight: 400;
+  font-family: "Raleway";
+  border: 1px solid var(--cor-p2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:invalid:focus,
+input:valid:focus {
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .about-fylo {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo-conteudo h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .titulo-conteudo {
+    max-width: 108ch;
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    .about-fylo {
+      gap: 120px;
+      margin-bottom: 0px;
+      padding: 80px 40px 0px 40px;
+    }
+
+    .titulo-conteudo {
+      text-align: center;
+    }
+
+    .titulo-conteudo h1 {
+      font-size: 2.25rem;
+      max-width: 22ch;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    .titulo-conteudo p {
+      max-width: 36ch;
+      margin: 0 auto;
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+
+    .titulo-conteudo form .button-started {
+      display: inline-block;
+      width: 60%;
+
+      margin-bottom: 120px;
+    }
+
+    form input[type="email"] {
+      display: inline-block;
+      width: 60%;
+      margin-bottom: 12px;
+    }
+
+    .about-fylo .test {
+      grid-row: 1;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .titulo-conteudo form .button-started {
+      display: inline-block;
+      width: 75%;
+    }
+
+    form input[type="email"] {
+      display: inline-block;
+      width: 75%;
+    }
+
+    .titulo-conteudo h1 {
+      font-size: 2rem;
+      max-width: 22ch;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    .titulo-conteudo p {
+      max-width: 36ch;
+      margin: 0 auto;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .about-fylo {
+      gap: 80px;
+    }
+  }
+}
